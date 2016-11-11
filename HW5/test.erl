@@ -4,9 +4,6 @@
 
 -define(Timeout, 1000).
 
-% register (node, self()).
-% test:start(node1, {node,'chordy@83.251.145.255'}).
-
 %% Starting up a set of nodes is made easier using this function.
 
 start(Module) ->
