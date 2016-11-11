@@ -3,7 +3,7 @@
 -export([start_ping/1, start_pong/0, ping/1, pong/0]).
 
 ping(Pong_Node) ->
-	{pong, Pong_Node} ! self(),
+	{pong, Pong_Node} ! self(), % Passing the Pid, not registered name!
 
 receive
       "hello there" -> 
